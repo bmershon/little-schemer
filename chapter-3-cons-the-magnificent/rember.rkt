@@ -1,6 +1,6 @@
 #lang racket
 
-(require "member.rkt")
+(require "../chapter-2-do-it-again/member.rkt")
 
 ; Evaluates to the list of atoms lat with the first occurrence of the atom
 ; a removed from lat.
