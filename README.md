@@ -2,7 +2,7 @@
 Things written while reading The Little Schemer.
 
 Code snippets closely reflect the examples offered in the various chapters of *The Little Schemer*. Most importantly, the examples
-aim to reflect some of the dependencies in the "from scratch" approach to Scheme and coputational fundamentals that the book takes by using the `(require "../path/to/file.rkt)` syntax of the [Racket language](https://racket-lang.org/).
+aim to reflect the dependencies among concepts that arise naturally in the *built from scratch* approach that the book takes to introducing Scheme and computational fundamentals. The use of the `(require "../path/to/file.rkt)` syntax of the [Racket language](https://racket-lang.org/) allows ideas to touch those introduced at an earlier part of the book; an idea understood in one concept is given another opportuntity for its usefulness and applications to be appreciated.
 
 The code was written and interactively poked and prodded using the DrRacket IDE that comes bundled with the download provided on the official Racket site. It's important to be able to follow along and code as one works through this book; Racket seems like the fastest way to get started. Simply open any of the included files in the DrRacket IDE and click "Run." If the directory structure matches that of this repository, everything should work, even the various imports using `require`. The code was written with the following modus operandi:
 
