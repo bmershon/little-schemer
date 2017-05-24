@@ -1,23 +1,19 @@
 #lang racket
 
-(require "../chapter-2-do-it-again/member.rkt")
+(require "../chapter-7-friends-and-relations/makeset.rkt")
 
-; Determines if set1 and set2 have at least one
-; element in common.
-(provide intersect?)
-(define intersect?
-  (lambda (set1 set2)
-    (not (null? (intersect set1 set2)))))
-
-; The intersection of set1 and set2.
-(provide intersect)
-(define intersect
-  (lambda (set1 set2)
+; A list containing all the elements from lat1 and lat2,
+; possibly with duplicates. Used by union to form an intermediate
+; list which is then be deduped.
+(define join
+  (lambda (lat1 lat2)
     (cond
-      ((or (null? set1) (null? set2)) '())
-      ; Both set1 and set2 are non-empty sets.
-      ((member? (car set1) set2)
-          (cons
-            (car set1) (intersect (cdr set1) set2)))
+      ((null? lat1) lat2)
       (else
-        (intersect (cdr set1) set2)))))
+        (join (cdr lat1) (cons (car lat1) lat2))))))
+
+; The union of set1 and set2.
+(provide union)
+(define union
+  (lambda (set1 set2)
+    (makeset (join set1 set2))))

@@ -3,6 +3,7 @@
 (require "../chapter-2-do-it-again/member.rkt")
 
 ; Determines if the list of atoms lat is a set.
+(provide set?)
 (define set?
   (lambda (lat)
     (cond
