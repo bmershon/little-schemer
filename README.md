@@ -1,4 +1,4 @@
-# little-schemer
+# Code for The Little Schemer
 Things written while reading The Little Schemer.
 
 Code snippets closely reflect the examples offered in the various chapters of *The Little Schemer*. Most importantly, the examples
