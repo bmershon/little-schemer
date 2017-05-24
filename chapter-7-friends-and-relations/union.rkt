@@ -14,7 +14,8 @@
 (define intersect
   (lambda (set1 set2)
     (cond
-      ((null? set1) '())
+      ((or (null? set1) (null? set2)) '())
+      ; Both set1 and set2 are non-empty sets.
       ((member? (car set1) set2)
           (cons
             (car set1) (intersect (cdr set1) set2)))

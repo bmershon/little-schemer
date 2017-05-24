@@ -5,6 +5,7 @@
 ; Turns a lat into a set by removing duplicates. The elements
 ; which remain are the last occurences in the list of elements
 ; of their respective duplicates.
+(provide makeset)
 (define makeset
   (lambda (lat)
     (cond
