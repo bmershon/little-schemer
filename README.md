@@ -1,5 +1,5 @@
 # Code for *The Little Schemer*
-Things written while reading The Little Schemer.
+Things written while reading The Little Schemer. This exercise was undertake soley based on its appearance in Bret Victor's [list of links](http://worrydream.com/#!/Links).
 
 Code snippets closely reflect the examples offered in the various chapters of *The Little Schemer*. Most importantly, the examples
 aim to reflect the dependencies among concepts that arise naturally in the *built from scratch* approach that the book takes to introducing Scheme and computational fundamentals.
