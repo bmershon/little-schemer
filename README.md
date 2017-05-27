@@ -2,7 +2,7 @@
 
 Things written while reading *The Little Schemer*.
 
-"[It is] one of the most unique and effective pedagogic books ever written," says [Bret Victor](http://worrydream.com/#!/Links).
+"One of the most unique and effective pedagogic books ever written," says [Bret Victor](http://worrydream.com/#!/Links).
 
 Code snippets closely reflect the examples offered in the various chapters of *The Little Schemer*. Most importantly, the examples
 aim to reflect the dependencies among concepts that arise naturally in the *built from scratch* approach that the book takes to introducing Scheme and computational fundamentals.
