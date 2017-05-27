@@ -6,17 +6,25 @@
 
 ; Remove the members equal to 'a' from lat, producing
 ; two lists: the list of lat with occurrences of 'a' removed
-; and the list of matches on 'a'. Then execute function f
-; with the two lists (lat with 'a removed and the matches on 'a').
+; and the list of matches on 'a'. Then execute function f with
+; arguments the two lists (lat with 'a removed and the matches on 'a').
 (define multirember&f
   (lambda (a lat f)
     (cond
       ; Base case.
       ((null? lat) (f '() '()))
+      ; The lambda function represents calling the
+      ; last-defined lambda function with parameters
+      ; that reflect having matched the next atom to
+      ; process in the list of atoms.
       ((eq? (car lat) a)
         (multirember&f a (cdr lat)
             (lambda (newlat seen)
               (f newlat (cons (car lat) seen)))))
+      ; The lambda function represents calling the
+      ; last-defined lambda function with parameters
+      ; that reflect having failed to match the next
+      ; atom to process in the list of atoms.
       (else
         (multirember&f a (cdr lat)
                           (lambda (newlat seen)
@@ -33,4 +41,4 @@
     (cons (length l1) (cons (length l2) '()))))
 
 
-(multirember&f 'a '(a a b a a) count)
+(multirember&f 'a '(a b g a c) count)
