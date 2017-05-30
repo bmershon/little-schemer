@@ -2,6 +2,22 @@
 
 Things written while reading *The Little Schemer*.
 
+*The grand payoff of this book: the applicative-order Y combinator.*
+```scheme
+(define Y
+  (lambda (f)
+    ((lambda (x) (x x))
+     (lambda (h) (f (lambda (g) ((h h) g)))))))
+```
+
+*Another payoff for reading this book: the normal-order (lazy) Y combinator.*
+```scheme
+(define Y
+  (lambda (f)
+    ((lambda (x) (f (x x)))
+     (lambda (x ) (f (x x))))))
+```
+
 "One of the most unique and effective pedagogic books ever written," says [Bret Victor](http://worrydream.com/#!/Links).
 
 Code snippets closely reflect the examples offered in the various chapters of *The Little Schemer*. Most importantly, the examples
