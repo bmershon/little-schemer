@@ -1,5 +1,6 @@
 #lang racket
 
+(provide eternity)
 (define eternity
   (lambda (x)
     (begin
