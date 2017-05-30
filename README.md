@@ -1,5 +1,7 @@
 # Code for *The Little Schemer*
 
+Things written while reading *The Little Schemer*.
+
 *The grand payoff of this book: the applicative-order Y combinator.*
 ```scheme
 (define Y
@@ -15,8 +17,6 @@
     ((lambda (x) (f (x x)))
      (lambda (x ) (f (x x))))))
 ```
-
-Things written while reading *The Little Schemer*.
 
 "One of the most unique and effective pedagogic books ever written," says [Bret Victor](http://worrydream.com/#!/Links).
 
