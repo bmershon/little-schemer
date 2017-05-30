@@ -1,5 +1,12 @@
 # Code for *The Little Schemer*
 
+```scheme
+(define Y
+  (lambda (f)
+    ((lambda (x) (x x))
+     (lambda (h) (f (lambda (g) ((h h) g)))))))
+```
+
 Things written while reading *The Little Schemer*.
 
 "One of the most unique and effective pedagogic books ever written," says [Bret Victor](http://worrydream.com/#!/Links).
