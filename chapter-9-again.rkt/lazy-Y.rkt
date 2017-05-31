@@ -3,7 +3,16 @@
 (require "./lazy-factorial.rkt")
 
 ; This Y-combinator only works when lazy-evaluation is supported.
-(define Y
+(define Y 
+  (lambda (wrapper)
+    ((lambda (x) (x x))
+     (lambda (x) (wrapper (x x))))))
+
+(define almost-factorial
   (lambda (f)
-    ((lambda (x) (f (x x)))
-     (lambda (x ) (f (x x))))))
+    (lambda (n)
+      (if (= n 0)
+          1
+          (* n (f (- n 1)))))))
+
+(Y almost-factorial)
