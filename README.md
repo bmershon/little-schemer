@@ -30,3 +30,7 @@ The code was written and interactively poked and prodded using the DrRacket IDE 
 *Write the function and test it using the REPL (Read Evaluate Print Loop) offered by the IDE, fixing things and becoming intimitely familiar with the minimal syntax of Racket along the way.*
 
 Mutually recursive applications (functions) are defined in the same file because Racket does not allow cyclical dependencies in the `require` statements.
+
+## See also
+
+* [Beautiful Racket](http://beautifulracket.com/) and the [code](https://github.com/bmershon/beautiful-racket) written while working through Matthew Butterick's wonderful tutorials.
