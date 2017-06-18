@@ -34,3 +34,4 @@ Mutually recursive applications (functions) are defined in the same file because
 ## See also
 
 * [Beautiful Racket](http://beautifulracket.com/) and the [code](https://github.com/bmershon/beautiful-racket) written while working through Matthew Butterick's wonderful tutorials.
+* [My attempt](https://bl.ocks.org/bmershon/d332ba9b06975562979efba7b367e162) at building on Mike Vanier's [blog post](http://mvanier.livejournal.com/2897.html) regarding the machinery of the Y Combinator.
